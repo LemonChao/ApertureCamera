@@ -15,6 +15,12 @@
 		6C3FE1BE20EF5C4200405894 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1BD20EF5C4200405894 /* main.m */; };
 		6C3FE1C820EF5C4300405894 /* ApertureCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1C720EF5C4300405894 /* ApertureCameraTests.m */; };
 		6C3FE1D320EF5C4300405894 /* ApertureCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1D220EF5C4300405894 /* ApertureCameraUITests.m */; };
+		6C3FE1ED20EF5C7C00405894 /* CaptureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1E320EF5C7C00405894 /* CaptureButton.m */; };
+		6C3FE1EE20EF5C7C00405894 /* UIView+LCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1E620EF5C7C00405894 /* UIView+LCAdditions.m */; };
+		6C3FE1EF20EF5C7C00405894 /* LCCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1E720EF5C7C00405894 /* LCCaptureManager.m */; };
+		6C3FE1F020EF5C7C00405894 /* StillImageResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1E820EF5C7C00405894 /* StillImageResultView.m */; };
+		6C3FE1F120EF5C7C00405894 /* ApertureCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1EA20EF5C7C00405894 /* ApertureCameraController.m */; };
+		6C3FE1F220EF5C7C00405894 /* LCFlashControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FE1EB20EF5C7C00405894 /* LCFlashControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		6C3FE1CE20EF5C4300405894 /* ApertureCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApertureCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3FE1D220EF5C4300405894 /* ApertureCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApertureCameraUITests.m; sourceTree = "<group>"; };
 		6C3FE1D420EF5C4300405894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C3FE1E120EF5C7C00405894 /* StillImageResultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StillImageResultView.h; sourceTree = "<group>"; };
+		6C3FE1E220EF5C7C00405894 /* LCCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCCaptureManager.h; sourceTree = "<group>"; };
+		6C3FE1E320EF5C7C00405894 /* CaptureButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureButton.m; sourceTree = "<group>"; };
+		6C3FE1E420EF5C7C00405894 /* LCFlashControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCFlashControl.h; sourceTree = "<group>"; };
+		6C3FE1E520EF5C7C00405894 /* ApertureCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApertureCameraController.h; sourceTree = "<group>"; };
+		6C3FE1E620EF5C7C00405894 /* UIView+LCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LCAdditions.m"; sourceTree = "<group>"; };
+		6C3FE1E720EF5C7C00405894 /* LCCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCCaptureManager.m; sourceTree = "<group>"; };
+		6C3FE1E820EF5C7C00405894 /* StillImageResultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StillImageResultView.m; sourceTree = "<group>"; };
+		6C3FE1E920EF5C7C00405894 /* CaptureButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureButton.h; sourceTree = "<group>"; };
+		6C3FE1EA20EF5C7C00405894 /* ApertureCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApertureCameraController.m; sourceTree = "<group>"; };
+		6C3FE1EB20EF5C7C00405894 /* LCFlashControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCFlashControl.m; sourceTree = "<group>"; };
+		6C3FE1EC20EF5C7C00405894 /* UIView+LCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LCAdditions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,7 @@
 		6C3FE1AD20EF5C4200405894 /* ApertureCamera */ = {
 			isa = PBXGroup;
 			children = (
+				6C3FE1E020EF5C7C00405894 /* 取景框相机 */,
 				6C3FE1AE20EF5C4200405894 /* AppDelegate.h */,
 				6C3FE1AF20EF5C4200405894 /* AppDelegate.m */,
 				6C3FE1B120EF5C4200405894 /* ViewController.h */,
@@ -130,6 +149,25 @@
 				6C3FE1D420EF5C4300405894 /* Info.plist */,
 			);
 			path = ApertureCameraUITests;
+			sourceTree = "<group>";
+		};
+		6C3FE1E020EF5C7C00405894 /* 取景框相机 */ = {
+			isa = PBXGroup;
+			children = (
+				6C3FE1E120EF5C7C00405894 /* StillImageResultView.h */,
+				6C3FE1E220EF5C7C00405894 /* LCCaptureManager.h */,
+				6C3FE1E320EF5C7C00405894 /* CaptureButton.m */,
+				6C3FE1E420EF5C7C00405894 /* LCFlashControl.h */,
+				6C3FE1E520EF5C7C00405894 /* ApertureCameraController.h */,
+				6C3FE1E620EF5C7C00405894 /* UIView+LCAdditions.m */,
+				6C3FE1E720EF5C7C00405894 /* LCCaptureManager.m */,
+				6C3FE1E820EF5C7C00405894 /* StillImageResultView.m */,
+				6C3FE1E920EF5C7C00405894 /* CaptureButton.h */,
+				6C3FE1EA20EF5C7C00405894 /* ApertureCameraController.m */,
+				6C3FE1EB20EF5C7C00405894 /* LCFlashControl.m */,
+				6C3FE1EC20EF5C7C00405894 /* UIView+LCAdditions.h */,
+			);
+			path = "取景框相机";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +305,13 @@
 			files = (
 				6C3FE1B320EF5C4200405894 /* ViewController.m in Sources */,
 				6C3FE1BE20EF5C4200405894 /* main.m in Sources */,
+				6C3FE1F120EF5C7C00405894 /* ApertureCameraController.m in Sources */,
+				6C3FE1ED20EF5C7C00405894 /* CaptureButton.m in Sources */,
+				6C3FE1F020EF5C7C00405894 /* StillImageResultView.m in Sources */,
 				6C3FE1B020EF5C4200405894 /* AppDelegate.m in Sources */,
+				6C3FE1EE20EF5C7C00405894 /* UIView+LCAdditions.m in Sources */,
+				6C3FE1EF20EF5C7C00405894 /* LCCaptureManager.m in Sources */,
+				6C3FE1F220EF5C7C00405894 /* LCFlashControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +475,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6849S78GLX;
 				INFOPLIST_FILE = ApertureCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lemon.xxx.ApertureCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhengchao.ProjectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -444,9 +490,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6849S78GLX;
 				INFOPLIST_FILE = ApertureCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lemon.xxx.ApertureCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhengchao.ProjectTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

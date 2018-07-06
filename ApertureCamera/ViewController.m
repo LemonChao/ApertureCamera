@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ApertureCameraController.h"
 
-@interface ViewController ()
+@interface ViewController ()<ApertureCameraControllerDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *photoButton;
 
 @end
 
@@ -17,6 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)takePhotoButtonAction:(UIButton *)sender {
+    
+    ApertureCameraController *cameraVC = [[ApertureCameraController alloc] init];
+    cameraVC.delegate = self;
+    
+    [self presentViewController:cameraVC animated:YES completion:nil];
+    
+}
+
+
+- (void)apertureCameraController:(ApertureCameraController *)controller didFinishTakePicture:(UIImage *)image {
+    [self.photoButton setBackgroundImage:image forState:UIControlStateNormal];
+    
+    [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
 
